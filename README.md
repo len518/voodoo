@@ -2,6 +2,8 @@
 
 This API was created to support the synchronization of the players progress, items and in app purchases. 
 
+The project is using Express as the framework, it is uploaded to github and it utulizes ESLint to check for errors and to keep a consisten style, in this case the AirBnB style
+
 ### ENDPOINTS
 
 #### Create User Data
