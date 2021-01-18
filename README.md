@@ -107,7 +107,7 @@ Payload:
 ```
 ---
 #### Add IAP
-This endpoint is called after the IAP was sucessfull indicating what currency the user have purchased
+This endpoint is called after the IAP was sucessfull indicating what currency the user have purchased, it also modifies the date of the user data if this is a new currency it will add it to the user and if it is a currency the user already have, it will increase its value. it only accepts quantities 5,10 or 15
 ```
 Method: POST
 URL: /iap/
@@ -129,7 +129,7 @@ URL: /iap/a1a72988-21dc-4997-a92e-669c39cbf162
 ```
 ---
 #### Delete IAP
-This endpoint deletes a single IAP by Id, and also updates the user currency
+This endpoint deletes a single IAP by Id, and also updates the user currency, it doesn't actually deletes the document in the database it marks a deleted flag as true inside the document.
 ```
 METHOD: DELETE
 URL: /iap/a1a72988-21dc-4997-a92e-669c39cbf162
