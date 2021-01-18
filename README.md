@@ -2,7 +2,7 @@
 
 This API was created to support the synchronization of the players progress, items and in app purchases. 
 
-The project is using Express as the framework, it is uploaded to github and it utulizes ESLint to check for errors and to keep a consisten style, in this case the AirBnB style
+The project is using Express as the framework, it is uploaded to github and it utilizes ESLint to check for errors and to keep a consistent style, in this case the AirBnB style
 
 ### ENDPOINTS
 
@@ -54,7 +54,7 @@ Payload:
 ---
 
 #### Get User By Id
-This endpoint is used to retreive the information of a single user
+This endpoint is used to retrieve the information of a single user
 
 ```
 Method: GET
@@ -109,7 +109,7 @@ Payload:
 ```
 ---
 #### Add IAP
-This endpoint is called after the IAP was sucessfull indicating what currency the user have purchased, it also modifies the date of the user data if this is a new currency it will add it to the user and if it is a currency the user already have, it will increase its value. it only accepts quantities 5,10 or 15
+This endpoint is called after the IAP was successfull indicating what currency the user has purchased, it also modifies the date of the user data if this is a new currency it will add it to the user and if it is a currency the user already has, it will increase its value. it only accepts quantities 5,10 or 15
 ```
 Method: POST
 URL: /iap/
@@ -124,21 +124,21 @@ Payload:
 ```
 ---
 #### Get IAP by Id
-With this endpoint we can retrive a single IAP we need to consult
+With this endpoint we can retrieve a single IAP we need to consult
 ```
 Method: GET
 URL: /iap/a1a72988-21dc-4997-a92e-669c39cbf162
 ```
 ---
 #### Delete IAP
-This endpoint deletes a single IAP by Id, and also updates the user currency, it doesn't actually deletes the document in the database it marks a deleted flag as true inside the document.
+This endpoint deletes a single IAP by Id, and also updates the user currency, it doesn't actually delete the document in the database it marks a deleted flag as true inside the document.
 ```
 METHOD: DELETE
 URL: /iap/a1a72988-21dc-4997-a92e-669c39cbf162
 ```
 ---
 #### Get IAPs by UserId
-This enpoint is used to display all IAPs purchased or deleted by the user
+This endpoint is used to display all IAPs purchased or deleted by the user
 ```
 Method: GET
 URL: /iap/user/676b79db-46af-4ab4-b0bf-f4d0c3c021aa
